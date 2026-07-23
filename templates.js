@@ -21,8 +21,8 @@ const TEMPLATES = {
   .message { font-size: 15px; opacity: 0.95; margin: 6px 0 0; white-space: pre-wrap; }
   .products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 8px;
     padding: 20px 16px 0;
   }
   .product {
@@ -48,14 +48,14 @@ const TEMPLATES = {
     height: 100%;
     font-size: 32px;
   }
-  .product-info { padding: 10px 12px 0; flex: 1; }
-  .product-name { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
-  .product-meta { font-size: 12px; color: #5b6b5d; }
+  .product-info { padding: 8px 8px 0; flex: 1; }
+  .product-name { font-size: 11px; font-weight: 700; margin-bottom: 3px; }
+  .product-meta { font-size: 10px; color: #5b6b5d; }
   .product-price {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 800;
     color: #2f9e44;
-    padding: 6px 12px 12px;
+    padding: 4px 8px 10px;
   }
   .products-empty {
     grid-column: 1 / -1;
@@ -106,8 +106,8 @@ const TEMPLATES = {
   .message { font-size: 15px; margin: 8px 0 0; opacity: 0.95; white-space: pre-wrap; }
   .products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px 6px;
     padding: 22px 16px 0;
   }
   .product {
@@ -133,14 +133,14 @@ const TEMPLATES = {
     height: 100%;
     font-size: 30px;
   }
-  .product-info { padding: 10px 10px 0; flex: 1; }
-  .product-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
-  .product-meta { font-size: 11px; color: #d8b9a8; }
+  .product-info { padding: 8px 6px 0; flex: 1; }
+  .product-name { font-size: 11px; font-weight: 700; margin-bottom: 3px; }
+  .product-meta { font-size: 10px; color: #d8b9a8; }
   .product-price {
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 900;
     color: #ffcf3f;
-    padding: 4px 10px 12px;
+    padding: 3px 6px 10px;
   }
   .products-empty {
     grid-column: 1 / -1;
@@ -191,8 +191,8 @@ const TEMPLATES = {
   }
   .products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px 16px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px 10px;
   }
   .product { display: flex; flex-direction: column; }
   .product-image {
@@ -213,15 +213,15 @@ const TEMPLATES = {
     color: #a39d8c;
   }
   .product-info {
-    padding-top: 8px;
+    padding-top: 6px;
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
   }
-  .product-name { font-size: 14px; font-weight: 600; margin-bottom: 3px; }
-  .product-meta { font-size: 11px; color: #8a8474; }
+  .product-name { font-size: 11px; font-weight: 600; margin-bottom: 2px; }
+  .product-meta { font-size: 10px; color: #8a8474; }
   .product-price {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 700;
-    padding-top: 4px;
+    padding-top: 3px;
     font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
   }
   .products-empty {
