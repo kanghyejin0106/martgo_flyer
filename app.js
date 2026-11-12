@@ -17,8 +17,11 @@
       .replace(/'/g, "&#39;");
   }
 
-  function formatUnitAmount(amount) {
-    return amount === null || amount === undefined ? "" : `${amount}`;
+  // 서버 origin 코드 → 한글. unknown(정보 없음)이나 알 수 없는 값은 표시하지 않음.
+  const ORIGIN_LABELS = { domestic: "국내산", imported: "수입산" };
+
+  function formatProductMeta(product) {
+    return [product.unit_type, ORIGIN_LABELS[product.origin]].filter(Boolean).join(" · ");
   }
 
   function formatPrice(price) {
@@ -35,7 +38,7 @@
         <div class="${imageClass}" style="${imageStyle}"></div>
         <div class="product-info">
           <div class="product-name">${escapeHtml(product.display_name)}</div>
-          <div class="product-meta">${escapeHtml(formatUnitAmount(product.unit_amount))}${escapeHtml(product.unit_type)} · ${escapeHtml(product.origin)}</div>
+          <div class="product-meta">${escapeHtml(formatProductMeta(product))}</div>
         </div>
         <div class="product-price">${escapeHtml(formatPrice(product.price))}</div>
       </div>`;
